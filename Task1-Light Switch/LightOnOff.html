@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LightOnOff</title>
+
+    <script>
+
+        function LightOnOff(){
+
+            var image = document.getElementById('imageId');
+
+            if(image.src.match("lightOff")){
+                image.src = 'lightOn.jpg';
+                
+            }
+            else{
+                image.src = 'lightOff.jpg';
+            }
+        }
+        
+
+    </script>
+</head>
+
+
+<body align="center">
+
+    <pre><h1>Turn the light on and off 
+by clicking the bulb!</h1></pre>
+
+    <img id = "imageId" onclick="LightOnOff()" src="lightOff.jpg"/>
+   
+</body>
+</html>
